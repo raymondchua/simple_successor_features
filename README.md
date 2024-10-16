@@ -3,4 +3,4 @@ This is the official code for our paper, "Learning Successor Features the Simple
 
 The authors are Raymond Chua, Arna Ghosh, Christos Kaplanis, Blake Richards and Doina Precup. 
 
-# TLDR: A simple approach to learning Successor Features 🌟
+# TLDR: A simple and elegent approach to learning Successor Features 🌟
