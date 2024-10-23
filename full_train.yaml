@@ -55,8 +55,6 @@ single_task_run_backward: false
 env_type: dm_control
 
 wandb_dir: ./wandb
-#work_dir: /home/chuaraym/scratch/url_benchmark/${mode}/
-#work_dir: /Users/raymondchua/Documents/mujoco_crl/${mode}/
 mode: full_train
 
 hydra:
