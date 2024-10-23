@@ -1,0 +1,27 @@
+# @package agent
+_target_: agent.sf_canonical.SFCanonicalAgent
+name: sf_canonical
+reward_free: ${reward_free}
+obs_type: ??? # to be specified later
+obs_shape: ??? # to be specified later
+action_shape: ??? # to be specified later
+device: ${device}
+lr: 1e-4
+lr_task: 1e-5
+critic_target_tau: 0.01
+update_every_steps: 2
+use_tb: ${use_tb}
+use_wandb: ${use_wandb}
+num_expl_steps: ??? # to be specified later
+hidden_dim: 512
+feature_dim: 50
+stddev_schedule: 0.2
+stddev_clip: 0.3
+sf_dim: 10
+update_task_every_step: 16
+nstep: 3
+batch_size: 1024
+init_critic: true
+num_init_steps: 4096 # set to ${num_train_frames} to disable finetune policy parameters
+update_encoder: ${update_encoder}
+normalize_basis_features: true
