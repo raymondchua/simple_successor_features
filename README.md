@@ -3,6 +3,8 @@ This is the official code for our paper, "Learning Successor Features the Simple
 
 The authors are Raymond Chua, Arna Ghosh, Christos Kaplanis, Blake Richards and Doina Precup. 
 
+## This repository is a work in progress. More details on the repo will be added soon. (Last updated: 4 Nov 2024)
+
 ## TLDR: A simple and elegant approach to learning Successor Features 🌟
 
 This repository contains the code for the experiments in the paper. The code is written in PyTorch and is adapted from
