@@ -30,6 +30,22 @@ The repository is structured as follows:
 
 ## Citations
 ***
-TBD
+If you find this repository useful in your research, please consider citing our paper:
+
+```bibtex
+@inproceedings{NEURIPS2024_597254dc,
+ author = {Chua, Raymond and Ghosh, Arna and Kaplanis, Christos and Richards, Blake and Precup, Doina},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {49957--50030},
+ publisher = {Curran Associates, Inc.},
+ title = {Learning Successor Features the Simple Way},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/597254dc45be8c166d3ccf0ba2d56325-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024}
+}
+```
+
+
 
 
