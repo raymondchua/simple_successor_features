@@ -65,7 +65,7 @@ The architecture of **Simple SFs** follows an **actor-critic structure** for con
 The experimental results for the Mujoco environments demonstrate the superior performance of **Simple SFs** compared to the baseline methods:
 
 <p align="center">
-  <img src="img/mujoco_results.png" alt="Results for Mujoco Environments" width="400">
+  <img src="img/mujoco_results.png" alt="Results for Mujoco Environments" width=600">
 </p>
 
 
