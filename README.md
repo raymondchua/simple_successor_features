@@ -1,9 +1,10 @@
 # Learning Successor Features the Simple Way 
-This is the official code for our paper, ["Learning Successor Features the Simple Way,"](https://arxiv.org/abs/2410.22133) accepted at NeurIPS 2024. 
+This is the official code for our paper, [Learning Successor Features the Simple Way,](https://arxiv.org/abs/2410.22133) accepted at NeurIPS 2024. 
 
 The authors are Raymond Chua, Arna Ghosh, Christos Kaplanis, Blake Richards and Doina Precup.
 
 ## TLDR: A simple and elegant approach to learning Successor Features 🌟
+Blog Post: [Learning Successor Features the Simple Way](https://https://raymondchua.github.io/projects/simple_sf_project/)
 
 ## Introduction
 Deep Reinforcement Learning (RL) plays a crucial role in enabling intelligent systems to adapt and generalize across 
@@ -68,19 +69,34 @@ The experimental results for the Mujoco environments demonstrate the superior pe
   <img src="img/mujoco_results.png" alt="Results for Mujoco Environments" width=600">
 </p>
 
-
-
-
-
 ## Structure
 ***
 The repository is structured as follows:
 
-| Folder           |          Description          |
-|:-----------------|:-----------------------------:|
-| agent            | Implementations of the agents | 
-| custom_dmc_tasks |             Tasks             |
-
+Simple_SFs/
+│── agent/                      # Implementations of the various agents
+│   ├── ddpg.py                 # Base DDPG agent for continuous actions, using actor-critic architecture.
+│   ├── sf_canonical.py         # SF agent that is learned using the canonical SF-TD loss.
+│   ├── sf_laplacian.py         # SF agent that is learned uses a laplacian (orthogonal) constraint on the basis features. 
+│   ├── sf_random.py            # SF agent that is learned using a fixed random initialization of the basis features. 
+│   ├── sf_reconstruction.py    # SF agent that is learned using an auxiliary reconstruction loss on the basis features.
+│   ├── sf_simple.py            # SF agent that is learned using the simple Q-SF-TD loss (our proposed method).
+│── custom_dmc_tasks/           # Custom tasks and environments for the DeepMind Control Suite.
+│   ├── cheetah.py              # Default cheetah task for the DeepMind Control Suite.
+│   ├── cheetahfast.py          # Cheetah task with faster running speed.
+│   ├── hopper.py               # Default hopper task for the DeepMind Control Suite.
+│   ├── humanoid.py             # Default humanoid task for the DeepMind Control Suite.
+│   ├── jaco.py                 # Default jaco task for the DeepMind Control Suite.
+│   ├── quadrupled.py           # Default quadrupled task for the DeepMind Control Suite.
+│   ├── walker.py               # Default walker task for the DeepMind Control Suite.
+│── exp_local/                  # Log files for local experiments
+│── full_train/                 # Saved buffers
+│── img/                        # Images for the README file
+│── dmc.py                      # wrapper for the DeepMind Control Suite
+│── dmc_benchmarks.py           # various benchmarks for the DeepMind Control Suite used in the paper
+│── logger.py                   # logger for the experiments
+│── replay_buffer.py            # replay buffer for the experiments
+│── utils.py                    # utility functions for the experiments
 
 
 ## Implementation Details
