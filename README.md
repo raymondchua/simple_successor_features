@@ -59,7 +59,9 @@ The following figures illustrates the architecture of **Simple SFs** and the exp
 The architecture of **Simple SFs** follows an **actor-critic structure**. 
 Below is the architecture used for the continuous action setting:
 
-![Simple SF Actor-Critic Architecture](img/Simple_SF_actor_critic.png)
+<p align="center">
+  <img src="img/Simple_SF_actor_critic.png" alt="Simple SF Actor-Critic Architecture" width="600">
+</p>
 
 
 
