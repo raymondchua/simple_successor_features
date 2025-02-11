@@ -72,7 +72,7 @@ The experimental results for the Mujoco environments demonstrate the superior pe
 ## Structure
 ***
 The repository is structured as follows:
-
+```plaintext
 Simple_SFs/
 │── agent/                      # Implementations of the various agents
 │   ├── ddpg.py                 # Base DDPG agent for continuous actions, using actor-critic architecture.
@@ -97,7 +97,7 @@ Simple_SFs/
 │── logger.py                   # logger for the experiments
 │── replay_buffer.py            # replay buffer for the experiments
 │── utils.py                    # utility functions for the experiments
-
+```
 
 ## Implementation Details
 | Environment Type       |           Framework            |             Status              |
