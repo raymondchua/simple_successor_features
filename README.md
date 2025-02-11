@@ -1,5 +1,5 @@
 # Learning Successor Features the Simple Way 
-This is the official code for our paper, "Learning Successor Features the Simple Way," accepted at NeurIPS 2024. 
+This is the official code for our paper, ["Learning Successor Features the Simple Way,"](https://arxiv.org/abs/2410.22133) accepted at NeurIPS 2024. 
 
 The authors are Raymond Chua, Arna Ghosh, Christos Kaplanis, Blake Richards and Doina Precup.
 
@@ -30,7 +30,7 @@ SFs directly from pixels, without requiring:
 
 ## What’s in this Repository?
 This repo provides the official implementation of **Simple SFs**, including:
-- PyTorch implementation for continuous action environments (adapted from the [Unsupervised Reinforcement Learning Benchmark (URLB) repository] (https://github.com/rll-research/url_benchmark)).
+- PyTorch implementation for continuous action environments (adapted from the [Unsupervised Reinforcement Learning Benchmark (URLB) repository](https://github.com/rll-research/url_benchmark).
 - JAX (Flax) implementation for discrete action environments (coming soon!)
 
 ## Quickstart Guide 
