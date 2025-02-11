@@ -30,7 +30,7 @@ SFs directly from pixels, without requiring:
 
 ## What’s in this Repository?
 This repo provides the official implementation of **Simple SFs**, including:
-- PyTorch implementation for continuous action environments (adapted from the  <a href='https://github.com/rll-research/url_benchmark'>Unsupervised Reinforcement Learning Benchmark (URLB) repository).
+- PyTorch implementation for continuous action environments (adapted from the [Unsupervised Reinforcement Learning Benchmark (URLB) repository] (https://github.com/rll-research/url_benchmark)).
 - JAX (Flax) implementation for discrete action environments (coming soon!)
 
 ## Quickstart Guide 
@@ -67,6 +67,8 @@ The experimental results for the Mujoco environments demonstrate the superior pe
 <p align="center">
   <img src="img/mujoco_results.png" alt="Results for Mujoco Environments" width=600">
 </p>
+
+
 
 
 
