@@ -56,8 +56,7 @@ To log and visualize training progress, set use_wandb to True.
 ## Architecture & Experimental Results
 The following figures illustrates the architecture of **Simple SFs** and the experimental results for the Mujoco environments. 
 
-The architecture of **Simple SFs** follows an **actor-critic structure**. 
-Below is the architecture used for the continuous action setting:
+The architecture of **Simple SFs** follows an **actor-critic structure** for continuous actions:
 
 <p align="center">
   <img src="img/Simple_SF_actor_critic.png" alt="Simple SF Actor-Critic Architecture" width="400">
