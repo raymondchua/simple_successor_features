@@ -53,6 +53,14 @@ python full_train.python
 The configuration file full_train.yaml controls training parameters such as num_train_frames etc. 
 To log and visualize training progress, set use_wandb to True. 
 
+## Architecture & Experimental Results
+The following figures illustrates the architecture of **Simple SFs** and the experimental results for the Mujoco environments. 
+
+The architecture of **Simple SFs** follows an **actor-critic structure**. 
+Below is the architecture used for the continuous action setting:
+
+![Simple SF Actor-Critic Architecture](img/Simple_SF_actor_critic.png)
+
 
 
 
