@@ -23,9 +23,9 @@ SFs directly from pixels, without requiring:
 ## Key Contributions
 - A simple yet effective modification of the Temporal-Difference (TD) loss, enabling stable SF learning from high-dimensional inputs.
 - Empirical validation across various environments, demonstrating superior performance in:
-  - 2D and 3D navigation tasks
-  - Mujoco continuous control tasks
-  - Continual RL settings, where SFs reduce interference and improve transferability.
+  1. 2D and 3D navigation tasks
+  2. Mujoco continuous control tasks
+  3. Continual RL settings, where SFs reduce interference and improve transferability.
 - Implementation in both PyTorch (Continuous Actions) and JAX (Discrete Actions).
 
 ## What’s in this Repository?
@@ -36,12 +36,22 @@ This repo provides the official implementation of **Simple SFs**, including:
 ## Quickstart Guide 
 This section provides a step-by-step guide to getting started with **Simple Successor Features (Simple SFs)**.
 
-1️⃣ Setting Up the Environment
+### 1. Setting Up the Environment
 We recommend using **Conda** for dependency management. To set up the environment, run:
 ```bash
 conda env create -f conda_env.yml
 conda activate simple_sfs
 ```
+
+### 2. Training Simple SFs
+Once the environment is set up, start the training by running:
+```bash
+python full_train.python
+```
+
+### 3. Modifying Training Parameters
+The configuration file full_train.yaml controls training parameters such as num_train_frames etc. 
+To log and visualize training progress, set use_wandb to True. 
 
 
 
@@ -63,9 +73,6 @@ The repository is structured as follows:
 |:-----------------------|:------------------------------:|:-------------------------------:|
 | Continuous Actions     |            PyTorch             |            ✅ Available          |  
 | Discrete Actions       |           JAX (Flax)           | 🔄 Migrating from Haiku to Flax |
-		
-		
-🚀 We are in the process of transitioning our discrete action implementation from Haiku to Flax for better compatibility with modern JAX libraries. The updated code will be published soon! Stay tuned! 😊
 
 
 ## Citations
