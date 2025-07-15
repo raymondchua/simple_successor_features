@@ -47,7 +47,7 @@ conda activate simple_sfs
 ### 2. Training Simple SFs
 Once the environment is set up, start the training by running:
 ```bash
-python full_train.python
+python full_train.py
 ```
 
 ### 3. Modifying Training Parameters
